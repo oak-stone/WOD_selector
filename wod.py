@@ -14,10 +14,9 @@ for x in range(1):
         #get the total nr of wods in the file
         num_lines = sum(1 for line in wods)
     #generate a random nr between 1 and total wods
-    # !! it's not a list, there fore we start from 1 and end with the actual lines of codes
+    # !! it's not a list, therefore we start from 1 and end with the actual lines of codes
     # !! if it would be a list, it would be from 0 to (num-lines - 1)
     random_nr = (random.randint(1 ,(num_lines)))
-    print(random_nr)
     #linecache is Python built in library to jump to a specific line in the file
     wod = linecache.getline(file, random_nr)
 
